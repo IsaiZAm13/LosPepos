@@ -1,0 +1,202 @@
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+}
+.menu .logo{
+	color: white;
+	font-size: 25px;
+	line-height: 70px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+.menu ul{
+	float: right;
+	margin-right: 10px;
+}
+
+.menu ul li{
+	display: inline-block;
+	margin: 14px 7px;
+}
+
+.menu ul li a{
+	font-size: 16px;
+	padding: 8px 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+	background: black;
+
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+@media(max-width: 820px){
+	.hamburguesa{
+		width: 30px;
+		position: absolute;
+		top: 40px;
+		transform: translateY(-50%);
+	}
+	.hamburguesa span{
+		margin-bottom: 3px;
+		background-color: palegreen;
+		height: 3px;
+		display: block;
+	}
+	.menu .logo{
+		margin-left: 50px;
+	}
+	.menu{
+		position: relative;
+	}
+	nav ul{
+		float: none;
+		width: 300px;
+		padding: 0px;
+		margin: 0px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		background-color: black;
+		padding-top: 60px;
+		transition: 1s;
+		left: -100%;
+		z-index: 2;
+	}
+	.open{
+		left: 0;
+	}
+
+	.menu ul li{
+		display: block;
+		float: none;
+	}
+
+	.menu ul li a{
+		font-size: 18px;
+		padding: 10px 40px;
+	}
+
+	.cerrar{
+		display: block;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 10px;
+		top: 15px;
+		color: palegreen;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+}
+
+
+
+@media(max-width: 550px){
+	.servicios .contenido{
+		grid-template-columns: auto;
+	}
+}

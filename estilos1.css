@@ -1,0 +1,15 @@
+section form{
+            position: relative;
+            margin: auto;
+        }
+
+        section form input{
+            display: inline-block;
+            padding: 10px;
+            width: 95%;
+            margin: 5px;
+        }
+
+        section form input[type="radio"]{
+            width: 5%;
+        }

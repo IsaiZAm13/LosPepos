@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Roboto:wght@100;400;900&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.menu .logo{
+	color: white;
+	font-size: 25px;
+	line-height: 70px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+.menu ul{
+	float: right;
+	margin-right: 10px;
+}
+
+.menu ul li{
+	display: inline-block;
+	margin: 30px 15px;
+}
+
+.menu ul li a{
+	font-size: 16px;
+	padding: 8px 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover{
+	color: palegreen;
+	font-size: 32px;
+	transition: 2s;
+	background-color: none;
+	border-radius: 15px;
+}
+
+.menu{
+	background: black;
+
+}
+/*Banner*/
+.banner{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	background: url('imagenes/Banner1.png') no-repeat center center/cover;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.banner .texto_banner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	padding: 20px;
+	min-width: 40%;
+	min-height:  20%;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .texto_banner p,
+.banner .texto_banner h1{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.banner .texto_banner h1{
+	font-size: 28px;
+}
+
+
+
+.banner_Contactenos{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	background: url('imagenes/contactenos.jpg') no-repeat center center/cover;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.banner_Contactenos .texto_banner_Contactenos{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	padding: 20px;
+	min-width: 40%;
+	min-height:  20%;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner_Contactenos .texto_banner_Contactenos p,
+.banner_Contactenos .texto_banner_Contactenos h1{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.banner_Contactenos .texto_banner_Contactenos h1{
+	font-size: 28px;
+}
+
+
+
+
+/*Quienes somos*/
+
+.nosotros{
+	padding: 10px 100px;
+	text-align: center;
+	margin: 40px 0px;
+}
+.titulo{
+	font-family: 'Amaranth', sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-size: 33px;
+	text-align: center;
+}
+.linea{
+	width: 350px;
+	height: 6px;
+	background-color: #2FBF39;
+	margin: 10px auto;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.boton{
+	background-color: #2FA037;
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 40px auto 0;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 15px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+	color: white;
+	margin-bottom: 20px;
+}
+.boton:hover{
+	background-color: #2FA037;
+	box-shadow: 5px 5px 5px gray;
+}
+/*Servicios*/
+.servicios{
+	margin: 50px 70px;
+}
+.servicios .contenido{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+}
+.imagen img{
+	width: 90%;
+	height: 250px;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: block;
+}
+
+.imagen p{
+	text-align: center;
+	font-weight: bolder;
+	margin: 20px;
+}
+.imagen .boton2{
+	background-color: #2FA037;
+	display: block;
+	text-decoration: none;
+	font-weight: bolder;
+	width: 550px;
+	padding: 5px;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	cursor: pointer;
+}
+
+.imagen .boton2:hover{
+	background-color: #00453F;
+	box-shadow: 5px 5px 5px gray;
+	font-size: 20px;
+	transition: 1s;
+}
+.redes{
+	background-color: black;
+	color: white;
+	height: 200px;
+	text-align: center;
+	padding: 20px;
+	min-width: 40%;
+}
+.espacio{
+	margin: 20px 20px;
+}
+
+@media(max-width: 820px){
+	.hamburguesa{
+		width: 30px;
+		position: absolute;
+		top: 40px;
+		transform: translateY(-50%);
+	}
+	.hamburguesa span{
+		margin-bottom: 3px;
+		background-color: palegreen;
+		height: 3px;
+		display: block;
+	}
+	.menu .logo{
+		margin-left: 50px;
+	}
+	.menu{
+		position: relative;
+	}
+	nav ul{
+		float: none;
+		width: 300px;
+		padding: 0px;
+		margin: 0px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		background-color: black;
+		padding-top: 60px;
+		transition: 1s;
+		left: -100%;
+		z-index: 2;
+	}
+	.open{
+		left: 0;
+	}
+
+	.menu ul li{
+		display: block;
+		float: none;
+	}
+
+	.menu ul li a{
+		font-size: 18px;
+		padding: 10px 40px;
+	}
+
+	.cerrar{
+		display: block;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 10px;
+		top: 15px;
+		color: palegreen;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+}
+
+
+
+@media(max-width: 550px){
+	.servicios .contenido{
+		grid-template-columns: auto;
+	}
+}
+

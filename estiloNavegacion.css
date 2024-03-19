@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Roboto:wght@100;400;900&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.menu .logo{
+	color: white;
+	font-size: 25px;
+	line-height: 70px;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+.menu ul{
+	float: right;
+	margin-right: 10px;
+}
+
+.menu ul li{
+	display: inline-block;
+	margin: 30px 15px;
+}
+
+.menu ul li a{
+	font-size: 16px;
+	padding: 8px 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover{
+	color: palegreen;
+	font-size: 32px;
+	transition: 2s;
+	background-color: none;
+	border-radius: 15px;
+}
+
+.menu{
+	background: black;
+
+}
+/*Banner*/
+.banner{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	background: url('imagenes/Banner.jpg') no-repeat center center/cover;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.banner .texto_banner{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	padding: 20px;
+	min-width: 40%;
+	min-height:  20%;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .texto_banner p,
+.banner .texto_banner h1{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.banner .texto_banner h1{
+	font-size: 28px;
+}
+
+
+
+.banner_Contactenos{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	background: url('imagenes/contactenos.jpg') no-repeat center center/cover;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.banner_Contactenos .texto_banner_Contactenos{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	padding: 20px;
+	min-width: 40%;
+	min-height:  20%;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner_Contactenos .texto_banner_Contactenos p,
+.banner_Contactenos .texto_banner_Contactenos h1{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.banner_Contactenos .texto_banner_Contactenos h1{
+	font-size: 28px;
+}
+
+
+
+
+/*Quienes somos*/
+
+.nosotros{
+	padding: 10px 100px;
+	text-align: center;
+	margin: 40px 0px;
+}
+.titulo{
+	font-family: 'Amaranth', sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-size: 33px;
+	text-align: center;
+}
+.linea{
+	width: 350px;
+	height: 6px;
+	background-color: #2FBF39;
+	margin: 10px auto;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.boton{
+	background-color: #2FA037;
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 40px auto 0;
+	border-radius: 10px;
+	text-decoration: none;
+	line-height: 15px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+	color: white;
+	margin-bottom: 20px;
+}
+.boton:hover{
+	background-color: #2FA037;
+	box-shadow: 5px 5px 5px gray;
+}
+/*Servicios*/
